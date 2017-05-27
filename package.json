@@ -1,0 +1,58 @@
+{
+  "name": "front-end-stack",
+  "version": "2.0.0",
+  "description": "Front End bootstrap to get your next project off the ground, based on Atomic Design thinking.",
+  "license": "MIT",
+  "private": true,
+  "repository": "pixelfusion/front-end-stack",
+  "homepage": "https://github.com/pixelfusion/front-end-stack#readme",
+  "author": "Te Riu Warren <te@pixelfusion.co.nz>",
+  "contributors": [
+    "Hal Smith Stevens <hal@pixelfusion.co.nz>",
+    "Tia Aoake <tia@pixelfusion.co.nz>"
+  ],
+  "bugs": {
+    "url": "https://github.com/pixelfusion/front-end-stack/issues"
+  },
+  "engines": {
+    "node": ">=7"
+  },
+  "main": "static/index.html",
+  "scripts": {
+    "build": "front-end-scripts build  && sw-precache --config=sw-precache-config.js",
+    "start": "front-end-scripts start",
+    "lint": "yarn run lint-css && yarn run lint-js",
+    "lint-css": "stylelint \"client/sass/**/*.{css,scss}\" --syntax scss",
+    "lint-js": "eslint \"client/js/**/*.{js,jsx}\" --quiet --fix",
+    "precommit": "yarn run lint",
+    "prepush": "yarn test",
+    "test": "jest"
+  },
+  "jest": {
+    "testRegex": "(/tests/unit/.*|\\.(test|spec))\\.(js|jsx)$",
+    "coverageDirectory": "tests/coverage",
+    "collectCoverage": true,
+    "moduleFileExtensions": [
+      "js",
+      "jsx"
+    ]
+  },
+  "devDependencies": {
+    "eslint": "^3.11.1",
+    "eslint-plugin-babel": "^4.0.0",
+    "eslint-plugin-filenames": "^1.1.0",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-react": "^6.8.0",
+    "front-end-scripts": "^2.0.0",
+    "husky": "^0.12.0",
+    "jest": "^18.0.0",
+    "stylelint": "^7.7.0"
+  },
+  "dependencies": {
+    "babel-polyfill": "^6.20.0",
+    "normalize.css": "^5.0.0",
+    "svg4everybody": "^2.0.3",
+    "sw-precache": "^5.0.0",
+    "whatwg-fetch": "^2.0.1"
+  }
+}

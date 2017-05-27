@@ -1,1 +1,8 @@
-/working
+*.log
+*.map
+.env
+.tmp
+/node_modules
+/public
+/tests/coverage
+/vendor
