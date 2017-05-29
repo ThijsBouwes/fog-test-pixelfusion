@@ -1,0 +1,60 @@
+/*
+    Item
+ */
+.item {
+    display: flex;
+    
+    flex-grow: 1;
+    
+    padding: rem(20);
+    margin: rem(10);
+
+    border-radius: rem(3);
+
+    box-shadow: 0 0 rem(10) 0 $color-light-grey;
+
+    &.post {
+        align-items: flex-end;
+        flex-direction: column;
+        justify-content: space-between;
+        min-height: rem(250);
+
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    &.facebook,
+    &.youtube {
+        align-items: center;
+        justify-content: center;
+
+        a {
+            display: flex;
+
+            align-items: center;   
+
+            justify-content: center;
+
+            text-decoration: none;
+        }
+    }
+
+    .social-text {
+        margin-bottom: 0;
+
+        text-transform: uppercase;
+
+        @media (--from-medium-screen-w) {
+            display: none;
+        }
+    }
+
+    &.facebook {
+        background-color: $color-chambray;
+    }
+
+    &.youtube {
+        background-color: $color-tabasco;
+    }
+}
