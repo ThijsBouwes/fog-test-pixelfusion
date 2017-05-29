@@ -7,62 +7,118 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
 
         <!-- SEO/Marketing -->
-        <meta name="keywords" content="comma, seperated, values"/><!-- TODO -->
-        <meta name="description" content="Description Here (150 chars)"/><!-- TODO -->
-        <meta name="subject" content="your website's subject"/><!-- TODO -->
-        <meta name="author" content=""/><!-- TODO -->
+        <meta name="keywords" content="fog test, thijs, pixelfusion"/>
+        <meta name="description" content="Fog test for PixelFusion, by Thijs Bouwes"/>
+        <meta name="subject" content="Fog Test"/>
+        <meta name="author" content="Thijs Bouwes"/>
 
         <!-- Open Graph -->
-        <meta property="fb:app_id" content=""/><!-- TODO (optional) -->
-        <meta property="og:url" content="https://example.com/page.html"/><!-- TODO-->
+        <meta property="og:url" content="https://fog-test.thijsbouwes.nl"/>
         <meta property="og:type" content="website"/>
-        <meta property="og:title" content="Content Title"/><!-- TODO-->
-        <meta property="og:image" content="https://example.com/image.jpg"/><!-- TODO-->
-        <meta property="og:description" content="Description Here (150 chars)"/><!-- TODO-->
-        <meta property="og:site_name" content="Website Name"/><!-- TODO-->
+        <meta property="og:title" content="Fog test by Thijs Bouwes"/>
+        <meta property="og:image" content="/static/images/tile-1.jpg"/>
+        <meta property="og:description" content="Fog test for PixelFusion, by Thijs Bouwes"/>
+        <meta property="og:site_name" content="Fog test Thijs Bouwes"/>
         <meta property="og:locale" content="en_GB"/>
 
         <!-- Twitter -->
         <meta name="twitter:card" content="summary"/>
-        <meta name="twitter:site" content="@site_account"/><!-- TODO-->
-        <meta name="twitter:creator" content="@pixelfusion_nz"/>
-        <meta name="twitter:url" content="https://example.com/page.html"/><!-- TODO-->
-        <meta name="twitter:title" content="Content Title"/><!-- TODO-->
-        <meta name="twitter:description" content="Description Here (150 chars)"/><!-- TODO-->
-        <meta name="twitter:image" content="https://example.com/image.jpg"/><!-- TODO-->
+        <meta name="twitter:site" content="@thijsbouwes"/>
+        <meta name="twitter:creator" content="@thijsbouwes"/>
+        <meta name="twitter:url" content="https://fog-test.thijsbouwes.nl"/>
+        <meta name="twitter:title" content="Fog Test by Thijs Bouwes"/>
+        <meta name="twitter:description" content="Fog test for PixelFusion, by Thijs Bouwes"/>
+        <meta name="twitter:image" content="/static/images/tile-1.jpg"/>
 
         <!-- Google -->
-        <meta itemprop="name" content="Content Title"/><!-- TODO-->
-        <meta itemprop="description" content="Description Here (150 chars)"/><!-- TODO-->
-        <meta itemprop="image" content="https://example.com/image.jpg"/><!-- TODO-->
+        <meta itemprop="name" content="Fog Test by Thijs Bouwes"/>
+        <meta itemprop="description" content="Fog test for PixelFusion, by Thijs Bouwes"/>
+        <meta itemprop="image" content="/static/images/tile-1.jpg"/>
 
         <!-- Apple -->
-        <meta name="apple-mobile-web-app-title" content="Website Name (8-10 characters)"/><!-- TODO-->
+        <meta name="apple-mobile-web-app-title" content="Fog test by Thijs Bouwes"/>
 
-        <title>Content Title | Website Name</title><!-- TODO -->
+        <title>Fog test | Thijs Bouwes</title>
 
-        <link rel="canonical" href=""/><!-- TODO -->
+        <link rel="canonical" href=""/>
 
-        <link rel="icon" href="/favicon.ico"/>
-        <link rel="manifest" href="/manifest.json"><!--  TODO: Remove if not needed -->
-
-        <!-- Prefetching, preloading, prebrowsing -->
-        <!-- TODO: Remove if not needed
-        <link rel="dns-prefetch" href="//example.com/"/>
-        <link rel="preconnect" href="https://www.example.com/"/>
-        <link rel="prefetch" href="https://www.example.com/"/>
-        <link rel="prerender" href="https://example.com/"/>
-        <link rel="subresource" href="styles.css"/>
-        <link rel="preload" href="image.png"/>
-        -->
-
-        <script>
-            if ('serviceWorker' in navigator) {
-                window.addEventListener('load', function() {
-                    navigator.serviceWorker.register('/service-worker.js');
-                });
-            }
-        </script>
+        <link rel="icon" href="/images/favicon.ico"/>
+        <link rel="manifest" href="/manifest.json">
     </head>
-    <body></body>
+    <body>
+
+        <div class="header-wrapper">
+            <header role="heading" class="header">
+                <h1 class="logo">Logo</h1>
+
+                <nav role="navigation" class="navigation">
+                    <div><a href="#">Page one</a></div>
+                    <div><a href="#">Page two</a></div>
+                    <div><a href="#">Page three</a></div>
+                </nav>
+            </header>
+        
+            <section class="hero">
+                <h2>Thijs Bouwes: 5hrs</h2>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet.</p>
+                <a class="button primary" href="#">Button label</a>
+                <div class="arrow"></div>
+            </section>
+        </div>
+
+        <main role="main" class="constrain-width || home-page"">
+            <section class="row">
+
+                <div class="col-6">
+                    <div class="item || post"  style="background-image: url('/images/tile-1.jpg');">
+                        <div class="tag"><a  class="button" href="#">Category</a></div>
+                        <div class="content">
+                            <h3>Fog Test</h3>
+                            <p>Duis autem vel eum iriure dolor in hedreirit in vulputate velit esse molestie consequad.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6">
+                    <div class="row">
+
+                        <div class="col-12">
+                            <div class="item || post" style="background-image: url('/images/tile-2.jpg');">
+                                <div class="tag"><a class="button" href="#">Category</a></div>
+                                <div class="content">
+                                    <h3>Fog Test</h3>
+                                    <p>Duis autem vel eum iriure dolor in hedreit in vulputate velit esse molestie consequad.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="item || facebook">
+                                <a href="#" target="blank" rel="nofollow">
+                                    <svg viewBox="0 0 40 40" class="icon" aria-hidden="true" focusable="false">
+                                        <use xlink:href="/images/icons/sprite.svg#facebook"/>
+                                    </svg>
+                                    <p class="social-text">View us on Facebook</p>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="item || youtube">
+                                <a href="#" target="blank" rel="nofollow">
+                                    <svg viewBox="0 0 40 40" class="icon" aria-hidden="true" focusable="false">
+                                        <use xlink:href="/images/icons/sprite.svg#youtube"/>
+                                    </svg>
+                                    <p class="social-text">View us on Youtube</p>
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </section>
+        </main>
+
+    </body>
 </html>
