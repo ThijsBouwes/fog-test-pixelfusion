@@ -1,6 +1,4 @@
-import { foo } from './test';
 import 'sass/index'; // Import CSS
-
 
 /*
     Ensure polyfills only load on older browsers
@@ -23,6 +21,5 @@ if (browserSupportsAllFeatures) {
     Main function
  */
 function initialise() {
-    console.debug('Test', foo());
-    console.warn('Fill in the index.js file'); // eslint-disable-line
+    console.log('Fog Test'); // eslint-disable-line
 }
