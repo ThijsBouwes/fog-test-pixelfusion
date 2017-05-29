@@ -2,4 +2,32 @@
     Navigation
  */
 .navigation {
+    display: flex;
+
+    a {
+        text-decoration: none;
+        text-transform: uppercase;
+
+        border-bottom: rem(2) solid transparent;
+
+        transition: border-color 0.3s ease-in-out;
+
+        &:hover {
+            border-color: $color-white;
+        }
+
+        @media (--from-medium-screen-w) {
+            margin-left: rem(25);
+        }
+    }
+
+    @media(--to-medium-screen-w) {
+        align-items: center;
+        justify-content: space-around;
+        width: 100%;
+        padding-top: $padding-width;
+        padding-right: $padding-width;
+        padding-bottom: $padding-width;
+        padding-left: $padding-width;    
+    }
 }
