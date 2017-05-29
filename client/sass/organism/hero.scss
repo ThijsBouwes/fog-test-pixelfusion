@@ -1,0 +1,62 @@
+/*
+    Hero
+ */
+.hero {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    padding-top: rem(125);
+    padding-bottom: rem(175);
+    margin-bottom: rem(20);
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    p {
+        max-width: rem(425);
+        padding-bottom: $padding-width;
+
+        @media(--from-medium-screen-w) {    
+            margin: 0 auto;
+
+            text-align: center;
+        }
+    }
+
+    &:after,
+    &:before {
+        position: absolute;
+        bottom: 0;
+
+        width: 50%;
+
+        border-bottom: 20px solid $color-white;
+        
+        content: '';
+    }
+
+    &:before {
+        right: 0;
+
+        border-left: 20px solid transparent;
+    }
+
+    &:after {
+        left: 0;
+        
+        border-right: 20px solid transparent;
+    }
+
+    @media(--from-medium-screen-w) {
+        align-items: center;
+    }
+
+    @media(--to-medium-screen-w) {
+        align-items: flex-start;
+        padding-left: $padding-width;
+    }
+}
