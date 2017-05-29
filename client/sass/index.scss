@@ -21,12 +21,14 @@
 // Molecules
 @import 'molecule/form.scss';
 @import 'molecule/navigation.scss';
+@import 'molecule/icon.scss';
+@import 'molecule/item.scss';
 
 
 // Organisms
 @import 'organism/footer.scss';
 @import 'organism/header.scss';
-
+@import 'organism/hero.scss';
 
 // Views
 @import 'view/print.scss';
