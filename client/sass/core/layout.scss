@@ -21,3 +21,35 @@
         max-width: $constrain-width-medium;
     }
 }
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+[class*='col-'] {
+    display: grid;
+}
+
+.col {
+    &-6,
+    &-md-6 {
+        width: 50%;
+    }
+
+    &-6 {
+        @media (--to-medium-screen-w) {
+            width: 100%;
+        }
+    }
+
+    &-md-6 {
+        @media (--to-small-screen-w) {
+            width: 100%;
+        }
+    }
+
+    &-12 {
+        width: 100%;
+    }
+}

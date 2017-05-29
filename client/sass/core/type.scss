@@ -19,8 +19,13 @@ h6,
 p {
     margin-top: 0;
     margin-bottom: rem(20);
+    
+    color: $color-white;
 }
 
+a {
+    color: $color-white;
+}
 
 
 // Headings
@@ -72,6 +77,7 @@ small {
 
 // Link
 a {
+    font-size: 0.8rem;
     text-decoration: none;
 
     &:hover {
