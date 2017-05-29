@@ -1,6 +1,38 @@
 /*
     Header
  */
+.header-wrapper {
+    background-image: url('$folder-image/banner.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .header {
-    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background-color: $color-woodsmoke-1;
+
+    h1 {
+        margin-bottom: 0;
+        
+        @media (--to-medium-screen-w) {
+            width: 100%;
+
+            text-align: center;
+
+            background-color: $color-black;
+        }
+    }
+
+    @media (--to-medium-screen-w) {
+        flex-wrap: wrap;
+    }
+
+    @media (--from-medium-screen-w) {
+        padding-right: $padding-width;
+        padding-left: $padding-width;    
+    }
 }
