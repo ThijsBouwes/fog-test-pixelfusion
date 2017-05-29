@@ -24,20 +24,26 @@ a.button,
 .button[type='button'],
 .button[type='submit'] {
     display: inline-flex;
+    
     align-items: center;
+    
     justify-content: center;
-    // padding: ;
 
-    // color: ;
+    padding-right: $padding-width;
+    padding-left: $padding-width;
+    
+    line-height: 1.4rem;
 
-    border: 1px solid transparent;
-    // border-radius: ;
+    background-color: $color-woodsmoke-1;
 
-    transition: background-color 0.2s, border-color 0.2s, color 0.2s;
+    border-radius: rem(30);
 
+    transform: translateY(0);
+    transition: all 0.25s ease;
 
     // States
     &:hover {
+        transform: translateY(0) scale(1.05);
     }
 
 
@@ -62,8 +68,13 @@ a.button,
     }
 
     &.primary {
+        line-height: 2rem;
+        text-transform: uppercase;
+
+        border: rem(2) solid $color-white;
 
         &:hover {
+            box-shadow: 0 0 rem(10) 0 $color-white;
         }
     }
 }
