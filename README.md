@@ -1,13 +1,9 @@
-# Fog Test
+# Fog Test - By Thijs Bouwes
 A front-end layout orientated challenge designed for front-end candidates.
 
 ### Task
 - Build the layout based on the **design** and **specifications** below using only a single **index.html** and single **index.css**
 - Download this repository to use the `index` folder as a template
-
-### Submission
-1. Create a **private repository** using Github, Bitbucket or Gitlab and give [info@pixelfusion.co.nz](mailto:info@pixelfusion.co.nz) access
-2. Or alternatively you can send us a ZIP
 
 ### Specifications
 - Use a mobile first approach
@@ -21,3 +17,8 @@ A front-end layout orientated challenge designed for front-end candidates.
 - [Desktop (1200px)](https://raw.githubusercontent.com/pixelfusion/fog-test/master/design/desktop.png)
 - [Assets](https://github.com/pixelfusion/fog-test/blob/master/index/assets)
 - Font: Helvetica Neue (Regular, Bold)
+
+### Setup :car:
+1. Pull the repo
+1. Run `yarn install`
+1. To visit the site run `yarn start` and go to `https://localhost:3000` accept the ssl verification error 
